@@ -8,4 +8,13 @@
     ```
     "cpp": "cd $dir && g++ $fileName -o $fileNameWithoutExt -std=c++11 `pkg-config --cflags --libs opencv4` && $dir$fileNameWithoutExt",
     ```
-- Then configure `"code-runner.runInTerminal": true`.
+- Then configure `code-runner` extension,
+    - Open `file > preferences > Settings > Extentions > code-runner`
+    - Scroll down to `code-runner.runInTerminal`
+    - Change to `true`.
+- Configuring `C/C++` extension,
+    - Open `file > preferences > Settings > Extentions > C/C++`
+    - Scroll down to `C_Cpp › Default: Intelli Sense Mode`
+    - Change to `linux-gcc-arm64` for Jetson Nano
+    - Then, scroll down again to `C_Cpp.intelliSenseEngine`
+    - Change to `Tag Parser`
